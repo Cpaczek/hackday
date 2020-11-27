@@ -1,0 +1,52 @@
+.hackday_popup_wrapper{
+/*    position:fixed;*/
+    visibility: hidden;
+
+}
+.hackday_curtain{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.54);
+    visibility: hidden;
+}
+.hackday_curtain_active {
+visibility: visible;
+}
+.hackday_popup_active{
+    visibility: visible;
+}
+.hackday_popup_inner{
+    border: 5px solid rgb(11,119,227);
+    border-radius: 5px;
+    position:absolute;
+    padding: 30px;
+    top:50%;
+    left:50%;
+    width:100%;
+    max-width: 70vw;
+    height: 80vh;
+    overflow:auto;
+    z-index: 100;
+    min-width:280px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+}
+.hackday_popup_close{
+    position:absolute;
+    z-index: 100;
+    color: black;
+    background:white;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+.hackday_popup_close:hover {
+cursor: pointer;
+}
